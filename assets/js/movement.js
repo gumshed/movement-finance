@@ -73,7 +73,7 @@ var _MAINNET_ENV = {
 	}
 }
 
-var _ROPSTEN_ENV = {
+var _GOERLI_ENV = {
 	"id": 5,
 	"comptrollerAddress": "",
 	"oracleAddress": "",
@@ -82,7 +82,7 @@ var _ROPSTEN_ENV = {
 	"uniswapMiningAddress": "",
 	"lpAddress": "0x8f5702821cB454081AAfE1232b89957E19B89Cd7",
 	"uniswapAddress": "0x8f5702821cB454081AAfE1232b89957E19B89Cd7",
-	"etherscan": "https://ropsten.etherscan.io/",
+	"etherscan": "https://goerli.etherscan.io/",
 	"cTokens": {
 		"usdt": {
 			"id": "usdt",
@@ -151,18 +151,18 @@ change_environment = function(chainId){
 	
 	if(chainId=='0x1'||chainId=='0x01'){ //mainnet
 		ENV = _MAINNET_ENV;
-		$('.ropsten-testnet').addClass('d-none');
+		$('.goerli-testnet').addClass('d-none');
 		$('.mainnet').removeClass('d-none');
 		
 	}
 	else if(chainId=='0x5'||chainId=='0x05'){
-		ENV = _ROPSTEN_ENV;
+		ENV = _GOERLI_ENV;
 		$('.mainnet').addClass('d-none');
-		$('.ropsten-testnet').removeClass('d-none');
+		$('.goerli-testnet').removeClass('d-none');
 	}
 	else{
 		Swal.fire(
-		  'Only support Mainnet and Ropsten',
+		  'Only support Mainnet and Goerli',
 		  '',
 		  'warning'
 		)
@@ -187,7 +187,7 @@ var syncCont = function(){
 	
 	if(page!='main') return;
 	
-	ENV = _ROPSTEN_ENV;
+	ENV = _GOERLI_ENV;
 	
 	ENV.comptrollerContract = new web3.eth.Contract(comptrollerAbi, ENV.comptrollerAddress);
 	ENV.oracleContract = new web3.eth.Contract(oracleAbi, ENV.oracleAddress);
@@ -210,7 +210,7 @@ var syncRate = function(){
 	
 	if(page!='main') return;
 	
-	ENV = _ROPSTEN_ENV;
+	ENV = _GOERLI_ENV;
 	
 	Object.values(ENV.cTokens).forEach(async function(cToken, index){
 	
@@ -257,7 +257,7 @@ var syncAccount = async function(address){
 	
 	if(page!='main') return;
 	
-	ENV = _ROPSTEN_ENV;
+	ENV = _GOERLI_ENV;
 			
 	if(!address){
 		Object.values(ENV.cTokens).forEach(function(cToken, cIndex){

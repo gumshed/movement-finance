@@ -1,19 +1,19 @@
 
 var infura_key = 'cce8dccbfb524ca691cd109d9e214d53';
 var infura_mainnet_url = 'https://mainnet.infura.io/v3/'+infura_key;
-var infura_ropsten_url = 'https://ropsten.infura.io/v3/'+infura_key;
+var infura_goerli_url = 'https://goerli.infura.io/v3/'+infura_key;
 
 
 
 //~ if(ethereum!== 'undefined'&& ethereum.chainId=='0x5'){
-	//~ var web3 = new Web3(new Web3.providers.HttpProvider(infura_ropsten_url));
+	//~ var web3 = new Web3(new Web3.providers.HttpProvider(infura_goerli_url));
 //~ }
 //~ else{
 	//~ var web3 = new Web3(new Web3.providers.HttpProvider(infura_mainnet_url));
 //~ }
 
-//temporary always ropsten
-var web3 = new Web3(new Web3.providers.HttpProvider(infura_ropsten_url));
+//temporary always goerli
+var web3 = new Web3(new Web3.providers.HttpProvider(infura_goerli_url));
 
 var account;
 
@@ -49,7 +49,7 @@ var connectMetamask = async function(){
 	if(eth_chainId=='0x1'||eth_chainId=='0x01'){ //mainnet
 		Swal.fire(
 		  'Error',
-		  'Saving and Lending app is under development and currently only available in Ropsten Testnet. Change your Metamask network to Ropsten to use this app.',
+		  'Saving and Lending app is under development and currently only available in Goerli Testnet. Change your Metamask network to Goerli to use this app.',
 		  'error'
 		);
 		return;
@@ -74,7 +74,7 @@ ethereum.on('accountsChanged', async (accounts) => {
 	if(eth_chainId=='0x1'||eth_chainId=='0x01'){ //mainnet
 		//~ Swal.fire(
 		  //~ 'Error',
-		  //~ 'Saving and Lending app is under development and currently only available in Ropsten Testnet. Change your Metamask network to Ropsten to use this app.',
+		  //~ 'Saving and Lending app is under development and currently only available in Goerli Testnet. Change your Metamask network to Goerli to use this app.',
 		  //~ 'error'
 		//~ );
 		return;
@@ -96,7 +96,7 @@ ethereum.on('chainChanged', async (chainId) => {
 	if(chainChanged=='0x1'||chainChanged=='0x01'){ //mainnet
 		//~ Swal.fire(
 		  //~ 'Error',
-		  //~ 'Saving and Lending app is under development and currently only available in Ropsten Testnet. Change your Metamask network to Ropsten to use this app.',
+		  //~ 'Saving and Lending app is under development and currently only available in Goerli Testnet. Change your Metamask network to Goerli to use this app.',
 		  //~ 'error'
 		//~ );
 		return;
