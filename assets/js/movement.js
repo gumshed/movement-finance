@@ -69,17 +69,7 @@ var _MAINNET_ENV = {
 			"address": "0x",
 			"underlyingAddress": "0x61fd1c62551850D0c04C76FcE614cBCeD0094498"
 		},
-		"ten": {
-			"id": "ten",
-			"name": "TEN",
-			"index": "tokenomy",
-			"unit": "TEN",
-			"logo": "./assets/images/tokens/ten_32.png",
-			"cTokenDecimals": 8,
-			"underlyingDecimals": 18,
-			"address": "0x",
-			"underlyingAddress": "0xDD16eC0F66E54d453e6756713E533355989040E4"
-		}
+		
 	}
 }
 

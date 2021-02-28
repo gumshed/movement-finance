@@ -449,7 +449,7 @@ var getEthMvtPrices = async function(){
 		'Accept': 'application/json',
 	  },
 	  body: JSON.stringify({query: "{ \
-		  tokens(where: {id_in: [\"0x3d46454212c61ecb7b31248047fa033120b88668\"]}) {\
+		  tokens(where: {id_in: [\"0xbcc5378b8bc3a305ac30501357467a824de8fe55\"]}) {\
 			id derivedETH symbol\
 			}\
 		  bundle(id: \"1\"){ ethPrice }	  }"})
