@@ -75,8 +75,8 @@ var _MAINNET_ENV = {
 
 var _ROPSTEN_ENV = {
 	"id": 5,
-	"comptrollerAddress": "0x505E1c2BFfe0Bf14b9f5521e4F4233FF977a2395",
-	"oracleAddress": "0x0f03a46E1c3393B5ef90BB6c297197274c71e7Bc",
+	"comptrollerAddress": "",
+	"oracleAddress": "",
 	"mvtAddress": "0xDB4b0387Ca9b9eB2bf6654887adbE6125a2Fd19C",
 	"genesisMiningAddress": "",
 	"uniswapMiningAddress": "",
