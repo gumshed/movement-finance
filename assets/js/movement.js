@@ -80,7 +80,7 @@ var _GOERLI_ENV = {
 	"mvtAddress": "0xfC877D3045fb0b4ba4F2b87B8a8f7E52F9BDf092",
 	"genesisMiningAddress": "",
 	"uniswapMiningAddress": "0xd762060a348dA458e6Ece05e988eed1E0fFA1ac2",
-	"lpAddress": "0x028ce46D3d9e8a2d40DaEc8187F6764b53d7CcF9",
+	"lpAddress": "0x37cf309a5ed091c1567295c71500d2fcb5b24590",
 	"uniswapAddress": "0x8f5702821cB454081AAfE1232b89957E19B89Cd7",
 	"etherscan": "https://goerli.etherscan.io/",
 	"cTokens": {
