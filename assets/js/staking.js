@@ -1,6 +1,6 @@
 var gasLimitStakeUniswap = 500000;
 var stakes = [];
-const startMiningBlocknum = 11250000;
+const startMiningBlocknum = 11250001;
 
 var uniswap_getClaimableMvt = async function(address){
 	var stakingCont =  new web3.eth.Contract(uniswapMiningAbi, ENV.uniswapMiningAddress);
