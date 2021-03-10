@@ -441,6 +441,32 @@ var addLpToMetamask = async function(){
 	});
 }
 
+
+var addMvtToMetamask = async function(){
+	
+	if(!account){
+		Swal.fire(
+		  'Error',
+		  'Connect MetaMask to continue.',
+		  'error'
+		)
+		return;
+	}
+
+	await ethereum.request({
+	method: 'wallet_watchAsset',
+	params: {
+	  type: 'ERC20', // Initially only supports ERC20, but eventually more!
+	  options: {
+		address: ENV.mvtAddress, // The address that the token is at.
+		symbol: 'MVT', // A ticker symbol or shorthand, up to 5 chars.
+		decimals: 18, // The number of decimals in the token
+		image: 'http://movement.finance/assets/images/new-logo/Logo-Movement-128x128px.png', // A string url of the token logo
+	  },
+	},
+	});
+}
+
 var getEthMvtPrices = async function(){
 	let data = await fetch('https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2', {
 	  method: 'POST',
