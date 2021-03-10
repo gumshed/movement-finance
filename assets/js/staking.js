@@ -80,7 +80,7 @@ var init_staking = async function(){
 	
 	$('.apyStaking0').html(toMaxDecimal(apy*0.2, 2));
 	$('.apyStaking30').html(toMaxDecimal(apy*0.4, 2));
-	$('.60').html(toMaxDecimal(apy*0.6, 2));
+	$('.apyStaking60').html(toMaxDecimal(apy*0.6, 2));
 	$('.apyStaking180').html(toMaxDecimal(apy*0.8, 2));
 	$('.apyStaking360').html(toMaxDecimal(apy, 2));
 	
