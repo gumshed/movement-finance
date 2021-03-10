@@ -49,7 +49,7 @@ var connectMetamask = async function(){
 	if(eth_chainId=='0x1'||eth_chainId=='0x01'){ //mainnet
 		Swal.fire(
 		  'Error',
-		  'Saving and Lending app is under development and currently only available in Goerli Testnet. Change your Metamask network to Goerli to use this app.',
+		  'Savings app is under development and currently only available in Goerli Testnet. Change your Metamask network to Goerli to use this app.',
 		  'error'
 		);
 		return;
@@ -96,7 +96,7 @@ ethereum.on('chainChanged', async (chainId) => {
 	if(chainChanged=='0x1'||chainChanged=='0x01'){ //mainnet
 		//~ Swal.fire(
 		  //~ 'Error',
-		  //~ 'Saving and Lending app is under development and currently only available in Goerli Testnet. Change your Metamask network to Goerli to use this app.',
+		  //~ 'Saving app is under development and currently only available in Goerli Testnet. Change your Metamask network to Goerli to use this app.',
 		  //~ 'error'
 		//~ );
 		return;
