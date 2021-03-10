@@ -5,12 +5,12 @@ var infura_goerli_url = 'https://goerli.infura.io/v3/'+infura_key;
 
 
 
-//~ if(ethereum!== 'undefined'&& ethereum.chainId=='0x5'){
-	//~ var web3 = new Web3(new Web3.providers.HttpProvider(infura_goerli_url));
-//~ }
-//~ else{
-	//~ var web3 = new Web3(new Web3.providers.HttpProvider(infura_mainnet_url));
-//~ }
+if(ethereum!== 'undefined'&& ethereum.chainId=='0x5'){
+	var web3 = new Web3(new Web3.providers.HttpProvider(infura_goerli_url));
+}
+else{
+	var web3 = new Web3(new Web3.providers.HttpProvider(infura_mainnet_url));
+}
 
 //temporary always goerli
 var web3 = new Web3(new Web3.providers.HttpProvider(infura_goerli_url));
