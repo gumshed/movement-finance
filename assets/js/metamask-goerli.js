@@ -13,7 +13,7 @@ else{
 }
 
 //temporary always goerli
-var web3 = new Web3(new Web3.providers.HttpProvider(infura_goerli_url));
+//var web3 = new Web3(new Web3.providers.HttpProvider(infura_goerli_url));
 
 var account;
 
