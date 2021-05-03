@@ -16,130 +16,26 @@ var formatter = new Intl.NumberFormat('us-US', {
 
 var _MAINNET_ENV = {
 	"id": 1,
-	"comptrollerAddress": "0x",
-	"oracleAddress": "0x",
+	
 	"mvtAddress": "0x3d46454212c61ecb7b31248047fa033120b88668",
-	"genesisMiningAddress": "",
-	"uniswapMiningAddress": "",
+
+	"uniswapMiningAddress": "0xC7ED274D6e2A158CDBE8DA8141000AFFA11D33E5",
 	"lpAddress": "0xbcc5378b8bc3a305ac30501357467a824de8fe55",
 	"uniswapAddress": "0xbcc5378b8bc3a305ac30501357467a824de8fe55",
 	"etherscan": "https://etherscan.io/",
-	"cTokens": {
-		"usdt": {
-			"id": "usdt",
-			"name": "USDT",
-			"index": "tether",
-			"unit": "USDT",
-			"logo": "./assets/libs/cryptocurrency-icons/32/color/usdt.png",
-			"cTokenDecimals": 8,
-			"underlyingDecimals": 6,
-			"address": "0x",
-			"underlyingAddress": "0xdAC17F958D2ee523a2206206994597C13D831ec7"
-		},
-		"wbtc": {
-			"id": "wbtc",
-			"name": "WBTC",
-			"index": "wbtc",
-			"unit": "WBTC",
-			"logo": "./assets/images/tokens/wbtc_32.png",
-			"cTokenDecimals": 8,
-			"underlyingDecimals": 8,
-			"address": "0x",
-			"underlyingAddress": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
-		},
-		"weth": {
-			"id": "weth",
-			"name": "WETH",
-			"index": "weth",
-			"unit": "WETH",
-			"logo": "./assets/images/tokens/weth_32.png",
-			"cTokenDecimals": 8,
-			"underlyingDecimals": 18,
-			"address": "0x",
-			"underlyingAddress": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
-		},
-		"idk": {
-			"id": "idk",
-			"name": "IDK",
-			"index": "idk",
-			"unit": "IDK",
-			"logo": "./assets/images/tokens/idk_32.png",
-			"cTokenDecimals": 8,
-			"underlyingDecimals": 8,
-			"address": "0x",
-			"underlyingAddress": "0x61fd1c62551850D0c04C76FcE614cBCeD0094498"
-		},
-		
-	}
+	
 }
 
 var _GOERLI_ENV = {
 	"id": 5,
-	"comptrollerAddress": "",
-	"oracleAddress": "",
+
 	"mvtAddress": "0xfcfc79623431ccf254f01091d4c8b2ce7722b1f1",
-	"genesisMiningAddress": "",
+
 	"uniswapMiningAddress": "0x51b668098047f3FF45BDCB0449604f060FD0e4F4",
 	"lpAddress": "0xc270f9d3800d308ee7a5213164650be9372ae1f9",
 	"uniswapAddress": "0x8f5702821cB454081AAfE1232b89957E19B89Cd7",
 	"etherscan": "https://goerli.etherscan.io/",
-	"cTokens": {
-		"usdt": {
-			"id": "usdt",
-			"name": "USDT",
-			"index": "tether",
-			"unit": "USDT",
-			"logo": "./assets/libs/cryptocurrency-icons/32/color/usdt.png",
-			"cTokenDecimals": 8,
-			"underlyingDecimals": 6,
-			"address": "0x49FE03B293B8f8806A1f98c8A8535778eFb1A247",
-			"underlyingAddress": "0x1Ad746307FC56B1eB8627FA2C088Ae320CF13224"
-		},
-		"wbtc": {
-			"id": "wbtc",
-			"name": "WBTC",
-			"index": "wbtc",
-			"unit": "WBTC",
-			"logo": "./assets/images/tokens/wbtc_32.png",
-			"cTokenDecimals": 8,
-			"underlyingDecimals": 8,
-			"address": "0x651F15B02115CCB9f11686600075489C83D36c00",
-			"underlyingAddress": "0xdA4a47eDf8ab3c5EeeB537A97c5B66eA42F49CdA"
-		},
-		"weth": {
-			"id": "weth",
-			"name": "WETH",
-			"index": "weth",
-			"unit": "WETH",
-			"logo": "./assets/images/tokens/weth_32.png",
-			"cTokenDecimals": 8,
-			"underlyingDecimals": 18,
-			"address": "0x39cC0fbA5be15F0263c86E0ec164a2be43C0eB4B",
-			"underlyingAddress": "0x7624cbE2f83c47Fd6DE8804cD76501845062803F"
-		},
-		"idk": {
-			"id": "idk",
-			"name": "IDK",
-			"index": "idk",
-			"unit": "IDK",
-			"logo": "./assets/images/tokens/idk_32.png",
-			"cTokenDecimals": 8,
-			"underlyingDecimals": 8,
-			"address": "0x603ea7d47e461998e794FC60bA1062E420dfB76e",
-			"underlyingAddress": "0x5f667013eb4da53be560701cd3d7757eced85c40"
-		},
-		"ten": {
-			"id": "ten",
-			"name": "TEN",
-			"index": "tokenomy",
-			"unit": "TEN",
-			"logo": "./assets/images/tokens/ten_32.png",
-			"cTokenDecimals": 8,
-			"underlyingDecimals": 18,
-			"address": "0x8e82Fe91Ebc61842ABB6c5cfe324e04f5E396335",
-			"underlyingAddress": "0x56C0369E002852C2570ca0CC3442E26df98E01A2"
-		}
-	}
+	
 }
 
 var ENV = _MAINNET_ENV;
