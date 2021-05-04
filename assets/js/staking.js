@@ -36,11 +36,11 @@ var init_staking = async function(){
 	var stakingCont =  new web3.eth.Contract(uniswapMiningAbi, ENV.uniswapMiningAddress);
 	//~ var wethCont =  new web3.eth.Contract(erc20Abi, ENV.cTokens.weth.address);
 	
-	//~ var total_mvt_staked = await stakingCont.methods.totalStaked().call();
-	//~ var total_mvt_staked = web3.utils.fromWei(total_stake);
+	var total_mvt_staked = await stakingCont.methods.totalStaked().call();
+	var total_mvt_staked = web3.utils.fromWei(total_stake);
 	
-	//~ var total_eth_staked = await stakingCont.methods.totalStakedPower().call();
-	//~ var total_eth_staked = web3.utils.fromWei(total_power);
+	var total_eth_staked = await stakingCont.methods.totalStakedPower().call();
+	var total_eth_staked = web3.utils.fromWei(total_power);
 	
 	var miningStateBlock = await stakingCont.methods.miningStateBlock().call();
 	var startMiningBlockNum = await stakingCont.methods.startMiningBlockNum().call();
@@ -291,7 +291,7 @@ var uniswap_go_stake = async function(){
 	}
 	
 	var mvtCont =  new web3.eth.Contract(erc20Abi, ENV.mvtAddress);
-	var lpCont =  new web3.eth.Contract(erc20Abi, ENV.cTokens.ten.underlyingAddress);
+	var lpCont =  new web3.eth.Contract(erc20Abi, ENV.lpAddress);
 	var miningCont =  new web3.eth.Contract(uniswapMiningAbi, ENV.uniswapMiningAddress);
 	
 	var stake_amount = $('#stake_amount').val();
